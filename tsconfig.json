@@ -1,0 +1,16 @@
+{
+  "include": ["types", "src/**/*"],
+  "exclude": [],
+  "typedocOptions": {
+    "name": "宜搭+",
+    "entryPoints": ["src/index.ts"],
+    "out": "dist/docs",
+    "excludePrivate": true,
+    "lang": "zh",
+    "navigationLinks": {
+      "GitHub": "https://github.com/wpy030414/yida-plus",
+      "宜搭 API": "https://docs.aliwork.com/docs/developer/api/about",
+      "钉钉 API": "https://open.dingtalk.com/document/development/development-basic-concepts"
+    }
+  }
+}

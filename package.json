@@ -1,0 +1,52 @@
+{
+  "name": "yida-plus",
+  "version": "26.7.1.1455",
+  "description": "面向宜搭（AliWork）低代码平台的增强外挂库，深度适配钉钉教育等业务场景。",
+  "keywords": [
+    "aliwork",
+    "dingtalk",
+    "lowcode",
+    "yida",
+    "yida-plus"
+  ],
+  "homepage": "https://yida-plus.xrl.im",
+  "bugs": {
+    "url": "https://github.com/wpy030414/yida-plus/issues"
+  },
+  "license": "WTFPF",
+  "author": "帕鲁 <krkr@xrl.im>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpy030414/yida-plus.git"
+  },
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "main": "dist/latest.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./dist/latest.js"
+    }
+  },
+  "scripts": {
+    "f": "oxfmt",
+    "build": "vite build && pnpm run docs",
+    "build:canary": "vite build --mode canary",
+    "docs": "typedoc"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "oxfmt": "^0.48.0",
+    "typedoc": "^0.28.19",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.12",
+    "vite-plugin-compression": "^0.5.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
